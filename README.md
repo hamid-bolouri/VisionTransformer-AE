@@ -1,9 +1,8 @@
 # Out Of Distribution responses of a Vision Transformer (ViT) configured as an Auto Encoder and trained on MNIST
 
-Several recent papers use generative AI (gAI) to predict cellular responses to previously unseen perturbations. First principles arguments (refs. 1, 2) suggest only mechanisticaly causal models can respond to OOD inputs correctly. Current gAI models learn patterns, not mechanisms (except for modulo algebra, where the pattern in the data is also the algorithm). So, can they really predict OOD?
+Several recent papers use generative AI (gAI) to predict cellular responses to previously unseen perturbations. First principles arguments (refs. 1, 2) suggest only mechanistically causal models can respond to OOD inputs correctly. Current gAI models learn patterns, not mechanisms (except for modulo algebra, where the pattern in the data is also the algorithm). So, can they really predict OOD?
 
-For a reality-check, I configured a Vision Transformer (a GPT-like deep-learning neural network) as an Auto Encoder and trained it on the MNIST hand-written digits. As shown below, the network reproduces MNIST digits well, but "hallucinates" when presented with OOD inputs. The same seems true for online large-scale AI tools: if you give them an input not in encountered  in their training data, they hallucinate. Try giving  Stable Diffusion 2.1 (https://huggingface.co/spaces/stabilityai/stable-diffusion) the prompt: "A Victorian bridge over a bed of nails".
-
+For a reality-check, I configured a Vision Transformer (a GPT-like deep-learning neural network) as an Auto Encoder and trained it on the MNIST hand-written digits. As shown below, the network reproduces MNIST digits well, but "hallucinates" when presented with OOD inputs. The same seems true for online large-scale AI tools: if you give them an input not like anything in their training data, they hallucinate. 
 ![Out Of Distribution responses of a Vision Transformer (ViT) configured as an Auto Encoder and trained on MNIST](./VitAE_HB_small.png)
 
 
